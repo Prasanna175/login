@@ -80,13 +80,22 @@
             left: 50%;
             transform: translate(-50%, -50%);
             width: 400px;
-            height:400px;
+            max-height:90vh;
             background: rgba(255, 255, 255, 0);
             padding: 20px;
             border-radius: 10px;
             backdrop-filter: blur(10px);
             box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+            overflow-y: auto; /* Enable vertical scrolling if needed */
+
+        }   
+           .input-group-register {
+           display: flex;
+           flex-direction: column;
+           gap: 10px;
         }
+
+
 
         .form-box {
             width: 100%;
